@@ -7,7 +7,7 @@ const nextConfig: NextConfig = {
   /* config options here */
   reactCompiler: true,
   images: {
-    domains: ["flagcdn.com"],
+    domains: ["flagcdn.com", "images.unsplash.com"],
   }
 };
 

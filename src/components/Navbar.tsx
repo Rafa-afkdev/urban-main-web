@@ -31,10 +31,10 @@ export default function Navbar() {
 
       {/* Links and Language Switcher */}
       <div className="flex items-center gap-4 md:gap-8 text-xs md:text-sm font-medium">
-        <Link href="#home" className="hover:text-orange-400 transition-colors hidden md:block">{t("home")}</Link>
-        <Link href="#about" className="hover:text-orange-400 transition-colors hidden md:block">{t("about")}</Link>
-        <Link href="#services" className="hover:text-orange-400 transition-colors hidden md:block">{t("services")}</Link>
-        <Link href="#contact" className="hover:text-orange-400 transition-colors hidden md:block">{t("contact")}</Link>
+        <Link href="/" className="hover:text-orange-400 transition-colors hidden md:block">{t("home")}</Link>
+        <Link href="/about" className="hover:text-orange-400 transition-colors hidden md:block">{t("about")}</Link>
+        <Link href="/services" className="hover:text-orange-400 transition-colors hidden md:block">{t("services")}</Link>
+        <Link href="/contact" className="hover:text-orange-400 transition-colors hidden md:block">{t("contact")}</Link>
 
         {/* Language Switcher */}
         <div className="flex items-center gap-2 md:gap-3 ml-2 md:ml-4 bg-white/10 px-3 py-1.5 rounded-full backdrop-blur-sm border border-white/20">

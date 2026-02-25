@@ -16,7 +16,7 @@ export async function SendEmail({ sendTo, subject, body, replyTo }: SendEmailOpt
     }
 
     const { data, error } = await resend.emails.send({
-      from: "UNIDXS <noreply@unidxswnc.org>",
+      from: "Urban Contractors Form <noreply@urbcontractors.com>",
       to: sendTo,
       subject: subject,
       html: body,

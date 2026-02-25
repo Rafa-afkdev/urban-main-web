@@ -1,3 +1,6 @@
+import LocalBusinessSchema from "@/components/LocalBusinessSchema";
+import SmoothScroll from "@/components/SmoothScroll";
+import { Toaster } from "@/components/ui/sonner";
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
@@ -15,8 +18,25 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Urban Contractors LLC",
-  description: "Construye tus sueños con nuestro equipo de expertos.",
+  metadataBase: new URL("https://urbcontractors.com"),
+  applicationName: "Urban Contractors",
+  authors: [{ name: "Urban Contractors", url: "https://urbcontractors.com" }],
+  creator: "Urban Contractors",
+  publisher: "Urban Contractors",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default async function RootLayout({
@@ -36,14 +56,20 @@ export default async function RootLayout({
         {/* Preload hero video data */}
         <link rel="preconnect" href="https://www.youtube.com" />
         <link rel="preconnect" href="https://s.ytimg.com" />
+        <meta name="theme-color" content="#f29c38" />
+        <LocalBusinessSchema />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <NextIntlClientProvider messages={messages}>
-          {children}
+          <SmoothScroll>
+            {children}
+          </SmoothScroll>
+          <Toaster />
         </NextIntlClientProvider>
       </body>
     </html>
   );
 }
+

@@ -32,16 +32,16 @@ export default function Footer() {
             <h3 className="text-white font-bold text-lg mb-6 uppercase tracking-wider">Enlaces Rápidos</h3>
             <ul className="flex flex-col gap-4 text-sm font-medium">
               <li>
-                <Link href="#home" className="hover:text-[#f29c38] transition-colors">{tNav("home")}</Link>
+                <Link href="/" className="hover:text-[#f29c38] transition-colors">{tNav("home")}</Link>
               </li>
               <li>
-                <Link href="#about" className="hover:text-[#f29c38] transition-colors">{tNav("about")}</Link>
+                <Link href="/about" className="hover:text-[#f29c38] transition-colors">{tNav("about")}</Link>
               </li>
               <li>
-                <Link href="#services" className="hover:text-[#f29c38] transition-colors">{tNav("services")}</Link>
+                <Link href="/services" className="hover:text-[#f29c38] transition-colors">{tNav("services")}</Link>
               </li>
               <li>
-                <Link href="#contact" className="hover:text-[#f29c38] transition-colors">{tNav("contact")}</Link>
+                <Link href="/contact" className="hover:text-[#f29c38] transition-colors">{tNav("contact")}</Link>
               </li>
             </ul>
           </div>

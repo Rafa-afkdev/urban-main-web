@@ -30,9 +30,6 @@ export default function Hero() {
         <p className="text-white text-xs sm:text-sm md:text-base font-bold tracking-[0.2em] md:tracking-[0.3em] uppercase mb-6 md:mb-8 drop-shadow-md">
           {t("subtitle")}
         </p>
-        <button className="bg-[#f29c38] hover:bg-[#e08a26] text-white font-bold py-2 md:py-3 px-6 md:px-8 rounded transition-colors uppercase tracking-wider text-xs md:text-sm shadow-lg">
-          {t("cta")}
-        </button>
       </div>
     </div>
   );

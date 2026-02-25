@@ -45,9 +45,6 @@ export default function ServicesSection() {
               {service.text}
             </p>
             
-            <button className="bg-[#f29c38] hover:bg-[#e08a26] text-white font-bold py-2 px-6 rounded transition-colors text-xs md:text-sm mt-auto">
-              {t("button")}
-            </button>
           </div>
         ))}
       </div>
