@@ -31,20 +31,37 @@ const nextConfig: NextConfig = {
 
   // ─── HTTP Cache Headers ───────────────────────────────────────────────────
   async headers() {
+    const staticAssetExtensions = [
+      "jpg", "jpeg", "png", "webp", "avif", "gif", "svg", "ico",
+      "woff", "woff2", "ttf", "otf",
+    ];
+
+    const staticHeaders = staticAssetExtensions.map((ext) => ({
+      source: `/:path*.${ext}`,
+      headers: [
+        {
+          key: "Cache-Control",
+          value: "public, max-age=31536000, stale-while-revalidate=86400, immutable",
+        },
+      ],
+    }));
+
     return [
+      // Cache JS and CSS chunks (Next.js builds them with content hashes)
       {
-        // Cache all static assets (images, fonts, JS, CSS) for 1 year
-        source: "/(.*\\.(jpg|jpeg|png|webp|avif|gif|svg|ico|woff|woff2|ttf|otf|js|css))",
+        source: "/_next/static/:path*",
         headers: [
           {
             key: "Cache-Control",
-            value: "public, max-age=31536000, stale-while-revalidate=86400, immutable",
+            value: "public, max-age=31536000, immutable",
           },
         ],
       },
+      // Cache static image/font assets by extension
+      ...staticHeaders,
+      // HTML pages: revalidate often but allow stale serving while revalidating
       {
-        // HTML pages: short cache with stale-while-revalidate for fast updates
-        source: "/(.*)",
+        source: "/:path*",
         headers: [
           {
             key: "Cache-Control",
