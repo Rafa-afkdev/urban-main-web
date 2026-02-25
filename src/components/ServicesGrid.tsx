@@ -114,6 +114,7 @@ export default function ServicesGrid() {
                   fill 
                   className="object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  quality={80}
                 />
                 {/* Decorative simple overlay line */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80" />

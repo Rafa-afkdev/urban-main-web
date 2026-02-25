@@ -33,6 +33,8 @@ export default function ServicesExcellence() {
               alt="Roof Maintenance"
               fill
               className="object-cover"
+              quality={80}
+              sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
         </motion.div>

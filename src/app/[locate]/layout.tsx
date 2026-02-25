@@ -56,6 +56,15 @@ export default async function RootLayout({
         {/* Preload hero video data */}
         <link rel="preconnect" href="https://www.youtube.com" />
         <link rel="preconnect" href="https://s.ytimg.com" />
+        {/* Preconnect to Unsplash CDN for hero images on about/contact pages */}
+        <link rel="preconnect" href="https://images.unsplash.com" />
+        {/* Preload critical hero image for the Services page */}
+        <link
+          rel="preload"
+          as="image"
+          href="/INICIO-Excelencia-servicios-remodelacion-scaled.jpg"
+          type="image/jpeg"
+        />
         <meta name="theme-color" content="#f29c38" />
         <LocalBusinessSchema />
       </head>

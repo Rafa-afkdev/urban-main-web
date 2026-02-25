@@ -4,11 +4,56 @@ import createNextIntlPlugin from 'next-intl/plugin';
 const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts');
 
 const nextConfig: NextConfig = {
-  /* config options here */
   reactCompiler: true,
+
+  // ─── Image Optimization ──────────────────────────────────────────────────
   images: {
-    domains: ["flagcdn.com", "images.unsplash.com"],
-  }
+    // Replace deprecated "domains" with secure remotePatterns
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "flagcdn.com",
+      },
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+      },
+    ],
+    // Responsive breakpoints that match Tailwind's sm/md/lg/xl/2xl
+    deviceSizes: [375, 640, 768, 1024, 1280, 1536, 1920],
+    // Sizes used for art-directed or srcset images
+    imageSizes: [16, 32, 64, 96, 128, 256, 384],
+    // Generate modern WebP and AVIF formats automatically
+    formats: ["image/avif", "image/webp"],
+    // Cache optimised images for up to 1 year in Next.js's image cache
+    minimumCacheTTL: 31536000, // 1 year in seconds
+  },
+
+  // ─── HTTP Cache Headers ───────────────────────────────────────────────────
+  async headers() {
+    return [
+      {
+        // Cache all static assets (images, fonts, JS, CSS) for 1 year
+        source: "/(.*\\.(jpg|jpeg|png|webp|avif|gif|svg|ico|woff|woff2|ttf|otf|js|css))",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, stale-while-revalidate=86400, immutable",
+          },
+        ],
+      },
+      {
+        // HTML pages: short cache with stale-while-revalidate for fast updates
+        source: "/(.*)",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=0, s-maxage=3600, stale-while-revalidate=59",
+          },
+        ],
+      },
+    ];
+  },
 };
 
 export default withNextIntl(nextConfig);

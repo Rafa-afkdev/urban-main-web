@@ -17,6 +17,8 @@ export default function ServicesHero() {
           fill
           className="object-cover"
           priority
+          quality={85}
+          sizes="100vw"
         />
         {/* Dark overlay for text readability */}
         <div className="absolute inset-0 bg-black/70" />
