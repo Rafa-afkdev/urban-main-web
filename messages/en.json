@@ -1,0 +1,48 @@
+{
+    "Navbar": {
+        "home": "Home",
+        "about": "About",
+        "services": "Services",
+        "contact": "Contact"
+    },
+    "Hero": {
+        "title": "BUILD YOUR DREAMS",
+        "subtitle": "WELCOME TO URBANCONTRACTORS",
+        "cta": "Explore more"
+    },
+    "BottomBanner": {
+        "text": "Get your painting project done by the experts.",
+        "button": "SEE MORE"
+    },
+    "ServicesSection": {
+        "service1_title": "Siding Installation",
+        "service1_text": "We offer professional siding installation services in various materials such as vinyl, fiber cement, wood, and other high-quality options.",
+        "service2_title": "Trim and Finish",
+        "service2_text": "Specializing in the installation of vinyl, fiber cement, wood, and other high-quality siding materials, we offer durable and aesthetic solutions for any project.",
+        "service3_title": "Repair and Maintenance",
+        "service3_text": "Effective solutions to restore and protect your property. Personalized consultation: We help you choose the best material and design for your needs.",
+        "button": "Read more"
+    },
+    "DetailedServices": {
+        "label": "SERVICES",
+        "trim_title": "Trim",
+        "trim_p1": "We specialize in making your home look absolutely its best with premium vinyl siding and vinyl trim to give your home that unique look without breaking the bank. Call us and we will schedule a free, no-obligation consultation in Pensacola.",
+        "trim_p2": "While we specialize in premium vinyl siding, we also have expert installers for steel, engineered wood (LP), and fiber cement (Hardie).",
+        "siding_title": "Siding",
+        "siding_p1": "At URBAN CONTRACTORS, we understand that your home's exterior siding is not just a matter of aesthetics, but also of long-term protection and value. Our team of experts is committed to offering you high-quality solutions that combine design, functionality, and durability. Whether you are looking for a complete renovation or a specific replacement, we are here to help you achieve exceptional results.",
+        "siding_p2": "We work exclusively with premium products that offer durability, resistance, and an impeccable finish."
+    },
+    "ExcellenceSection": {
+        "title": "Pioneering Excellence in Remodeling Services",
+        "text": "When it comes to finding a remodeling company, you need to partner with a remodeler that raises the bar for quality standards. At URBAN CONTRACTORS, we are a dedicated team committed to providing you with a remodeling service that matches your unique style. With over twenty-three years of experience, our contractors have what it takes to transform your home in Pensacola, FL."
+    },
+    "Footer": {
+        "title": "Urban Contractors",
+        "description": "Remodeling and painting experts transforming your home with quality and dedication.",
+        "contact_title": "Contact Us",
+        "phone": "+1 (929) 358-3319",
+        "email": "Contractorsurban@gmail.com",
+        "location": "Pensacola, FL",
+        "copyright": "Urbancontractors - All rights reserved © 2026"
+    }
+}

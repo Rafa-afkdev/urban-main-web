@@ -1,0 +1,48 @@
+{
+    "Navbar": {
+        "home": "Inicio",
+        "about": "Acerca de",
+        "services": "Servicios",
+        "contact": "Contacto"
+    },
+    "Hero": {
+        "title": "CONSTRUYE TUS SUEÑOS",
+        "subtitle": "BIENVENIDO A URBANCONTRACTORS",
+        "cta": "Explorar más"
+    },
+    "BottomBanner": {
+        "text": "Consigue tu proyecto de pintura hecho por expertos.",
+        "button": "VER MAS"
+    },
+    "ServicesSection": {
+        "service1_title": "Instalación de revestimiento",
+        "service1_text": "Ofrecemos servicios profesionales de instalación de revestimientos en diversos materiales como vinilo, fibrocemento, madera y otras opciones de alta calidad.",
+        "service2_title": "Moldura y acabado",
+        "service2_text": "Especializados en la instalación de revestimientos de vinilo, fibrocemento, madera y otros materiales de alta calidad, ofrecemos soluciones duraderas y estéticas para cualquier proyecto.",
+        "service3_title": "Reparación y Mantenimiento",
+        "service3_text": "Soluciones efectivas para restaurar y proteger su propiedad. Consulta personalizada: Te ayudamos a elegir el mejor material y diseño para tus necesidades.",
+        "button": "Leer más"
+    },
+    "DetailedServices": {
+        "label": "SERVICIOS",
+        "trim_title": "Trim",
+        "trim_p1": "Nos especializamos en hacer que su casa luzca absolutamente mejor con revestimiento de vinilo de primera calidad y listones de vinilo para darle a su casa ese aspecto único sin tener que gastar mucho dinero. Llámenos y programaremos una consulta gratuita y sin compromiso en Pensacola.",
+        "trim_p2": "Si bien nos especializamos en revestimientos de vinilo de primera calidad, también contamos con instaladores expertos para acero, madera de ingeniería (LP) y fibrocemento (Hardie).",
+        "siding_title": "Siding",
+        "siding_p1": "En URBAN CONTRACTORS, entendemos que el revestimiento exterior de tu hogar no solo es una cuestión de estética, sino también de protección y valor a largo plazo. Nuestro equipo de expertos está comprometido en ofrecerte soluciones de alta calidad que combinan diseño, funcionalidad y durabilidad. Ya sea que busques una renovación completa o un reemplazo específico, estamos aquí para ayudarte a lograr resultados excepcionales.",
+        "siding_p2": "Trabajamos exclusivamente con productos premium que ofrecen durabilidad, resistencia y un acabado impecable."
+    },
+    "ExcellenceSection": {
+        "title": "Excelencia pionera en servicios de remodelación",
+        "text": "Cuando se trata de encontrar una empresa de remodelación, debe asociarse con un remodelador que eleve el listón de los estándares de calidad. En URBAN CONTRACTORS, somos un equipo dedicado y comprometido a brindarle un servicio de remodelación que coincida con su estilo único. Con más de veintitrés años de experiencia, nuestros contratistas tienen lo necesario para transformar su hogar en Pensacola, FL."
+    },
+    "Footer": {
+        "title": "Urban Contractors",
+        "description": "Expertos en remodelación y pintura para transformar tu hogar con calidad y dedicación.",
+        "contact_title": "Contacto",
+        "phone": "+1 (929) 358-3319",
+        "email": "Contractorsurban@gmail.com",
+        "location": "Pensacola, FL",
+        "copyright": "Urbancontractors - Todos los derechos © 2026"
+    }
+}
