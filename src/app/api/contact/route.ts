@@ -14,7 +14,7 @@ export async function POST(req: Request) {
     }
 
     const result = await SendEmail({
-      sendTo: 'sirfucho@gmail.com',
+      sendTo: 'contractorsurban@gmail.com',
       replyTo: email,
       subject: `Nuevo mensaje de Contacto: ${subject}`,
       body: `
